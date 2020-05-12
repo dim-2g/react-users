@@ -1,0 +1,47 @@
+.home {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [left] 20vw [center] 50vw [right] 20vw;
+    justify-content: center;
+    & > div {
+        margin-top: 10px;
+    }
+}
+
+.user-panel{
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.example-enter {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.3s;
+  }
+  
+  .example-leave {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .example-leave.example-leave-active {
+    opacity: 0;
+    transform: translateX(250px);
+    transition: 0.3s;
+  }
+
+  .example-appear {
+    opacity: 0.01;
+    transform: translateY(50px);
+  }
+  
+  .example-appear.example-appear-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .5s ease-in;
+  }
